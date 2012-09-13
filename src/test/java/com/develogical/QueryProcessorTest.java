@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
+import static org.junit.Assert.fail;
 import static org.junit.matchers.StringContains.containsString;
 
 public class QueryProcessorTest {
@@ -12,7 +13,8 @@ public class QueryProcessorTest {
 
     @Test
     public void returnsEmptyStringIfCannotProcessQuery() throws Exception {
-        assertThat(queryProcessor.process("test"), is(""));
+    	fail();
+//        assertThat(queryProcessor.process("test"), is(""));
     }
 
     @Test
